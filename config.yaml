@@ -1,0 +1,69 @@
+seed: 2026
+population_size: 50
+max_iterations: 200
+convergence_tolerance: 1.0e-6
+stagnation_window: 10
+repeated_runs: 30
+
+network:
+  base_mva: 10.0
+  base_kv: 12.66
+  voltage_min_pu: 0.95
+  voltage_max_pu: 1.05
+  line_current_limit_pu: 3.0
+
+dg:
+  capacity_mw: 0.6
+  power_factor_min: 0.8
+  types:
+    DE:
+      variable_cost_per_mwh: 88.0
+      emission_lb_per_mwh: 1900.0
+    MT:
+      variable_cost_per_mwh: 84.0
+      emission_lb_per_mwh: 1500.0
+    FC:
+      variable_cost_per_mwh: 70.0
+      emission_lb_per_mwh: 700.0
+
+grid:
+  variable_cost_per_mwh: 55.0
+  emission_lb_per_mwh: 2200.0
+
+fuzzy:
+  economic_ratio_lower: 0.5
+  economic_ratio_upper: 1.0
+  emission_ratio_lower: 0.5
+  emission_ratio_upper: 1.0
+  vdf_lower: 0.05
+  vdf_upper: 0.10
+
+penalty:
+  voltage: 10000.0
+  current: 1000.0
+  power_balance: 10000.0
+  disconnected: 1000000.0
+  cycle: 1000000.0
+  fault: 1000000.0
+
+scenarios:
+  base:
+    load_multiplier: 1.0
+  critical10:
+    load_multiplier: 1.10
+  critical20:
+    load_multiplier: 1.20
+  critical30:
+    load_multiplier: 1.30
+  fault_line_25:
+    load_multiplier: 1.0
+    faulted_branches: [25]
+  fault_line_7:
+    load_multiplier: 1.0
+    faulted_branches: [7]
+  multi_fault_9_27:
+    load_multiplier: 1.0
+    faulted_branches: [9, 27]
+  multi_fault_5_14_30:
+    load_multiplier: 1.0
+    faulted_branches: [5, 14, 30]

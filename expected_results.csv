@@ -1,0 +1,31 @@
+section,configuration,economic_cost,emission_cost,loss_kw,minimum_voltage_pu,tie_switches,reserve_or_unserved,notes
+Table1,Initial,172.38,8022.05,202.66,0.91,"33;34;35;36;37",882.34,3-MG base load
+Table1,Grid+DE,158.04,6798.98,91.04,0.95,"33;34;35;36;37",993.96,3-MG base load
+Table1,Grid+FC,150.12,6048.16,91.04,0.95,"33;34;35;36;37",993.96,3-MG base load
+Table1,Grid+MT,157.86,6981.30,91.04,0.95,"33;34;35;36;37",993.96,3-MG base load
+Table1,Grid+DE+Reconf,157.05,6752.93,68.55,0.96,"7;9;14;28;30",1016.45,3-MG base load
+Table1,Grid+FC+Reconf,149.13,6002.10,68.55,0.96,"7;9;14;28;30",1016.45,3-MG base load
+Table1,Grid+MT+Reconf,157.03,6935.25,68.55,0.96,"7;9;14;28;30",1016.45,3-MG base load
+Table2,Initial,172.38,8022.05,202.66,0.91,"33;34;35;36;37",882.34,5-MG base load
+Table2,Grid+DE,159.09,6854.54,118.18,0.93,"33;34;35;36;37",966.82,5-MG base load
+Table2,Grid+FC,151.32,6103.72,118.18,0.93,"33;34;35;36;37",966.82,5-MG base load
+Table2,Grid+MT,159.05,7036.86,118.18,0.93,"33;34;35;36;37",966.82,5-MG base load
+Table2,Grid+DE+Reconf,157.05,6763.37,73.65,0.97,"7;10;14;28;31",1011.35,5-MG base load
+Table2,Grid+FC+Reconf,149.36,6012.55,73.65,0.97,"7;10;14;28;31",1011.35,5-MG base load
+Table2,Grid+MT+Reconf,157.13,6945.69,73.65,0.97,"7;10;14;28;31",1011.35,5-MG base load
+Table3,FFA,205.32,7112,,0.023,,4284,algorithm comparison; manuscript reports VD not Vmin
+Table3,PSO,204.83,7218,,0.018,,4166,algorithm comparison; manuscript reports VD not Vmin
+Table3,FTLA,201.64,7095,,0.028,,3957,algorithm comparison; manuscript reports VD not Vmin
+Table3,CMFO,194.68,6991,,0.016,,3781,algorithm comparison; manuscript reports VD not Vmin
+Table3,IMFO,194.68,6991,,0.016,,2873,algorithm comparison; manuscript reports VD not Vmin
+Table3,Proposed_DE,157.05,6763,,0.014,,1869,algorithm comparison; manuscript reports VD not Vmin
+Table3,Proposed_FC,149.36,6012,,0.014,,1784,algorithm comparison; manuscript reports VD not Vmin
+Table3,Proposed_MT,157.13,6945,,0.014,,1823,algorithm comparison; manuscript reports VD not Vmin
+Table4,3MG_BL,149.36,6012.55,73.65,0.97,"7;10;14;28;31",0,critical-load table
+Table4,3MG_BL+10%,104.25,6792.06,82.83,0.96,"7;10;14;28;31",0,manuscript value appears inconsistent with later summary
+Table4,3MG_BL+20%,183.15,7585.02,98.59,0.95,"7;9;14;28;31",0.58,critical-load table
+Table4,3MG_BL+30%,200.31,8383.80,117.18,0.95,"9;14;28;31;33",1.12,critical-load table
+Table5,5MG_BL,149.13,6002.10,68.55,0.96,"7;9;14;28;30",0,critical-load table
+Table5,5MG_BL+10%,165.84,6779.48,76.69,0.95,"7;9;14;28;30",0,critical-load table
+Table5,5MG_BL+20%,182.72,7565.35,88.98,0.95,"7;9;14;28;31",0.58,critical-load table
+Table5,5MG_BL+30%,199.68,8354.28,102.76,0.95,"7;9;14;28;31",1.22,critical-load table
